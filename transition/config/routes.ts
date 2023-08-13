@@ -157,6 +157,14 @@ export default [
             ],
           },
           {
+            path: '/tech/direction/designPattern',
+            name: '设计模式',
+          },
+          {
+            path: '/tech/direction/codingThinking',
+            name: '编程思想',
+          },
+          {
             path: '/tech/direction/codingTool',
             name: '编码工具',
             routes: [
@@ -174,13 +182,19 @@ export default [
             path: '/tech/direction/codingStyle',
             name: '编码风格管理',
           },
+        ],
+      },
+      {
+        path: '/tech/algorithm',
+        name: '算法领域特定',
+        routes: [
           {
-            path: '/tech/direction/designPattern',
-            name: '设计模式',
+            path: '/tech/algorithm/classic',
+            name: '经典算法管理',
           },
           {
-            path: '/tech/direction/codingThinking',
-            name: '编程思想',
+            path: '/tech/algorithm/ai',
+            name: 'AI算法管理',
           },
         ],
       },
@@ -191,6 +205,10 @@ export default [
           {
             path: '/tech/prac/project',
             name: '实战项目管理',
+          },
+          {
+            path: '/tech/prac/opensource',
+            name: '开源项目源码研究管理',
           },
         ],
       },
