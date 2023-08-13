@@ -14,7 +14,7 @@ export default [
   {
     path: '/',
     name: '工作台',
-    component: './Welcome',
+    component: './Workbench',
   },
   {
     path: '/jobs',
