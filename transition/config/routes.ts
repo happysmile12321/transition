@@ -17,6 +17,125 @@ export default [
     component: './Workbench',
   },
   {
+    path: '/platform',
+    name: '平台管理',
+    routes: [
+      {
+        path: '/platform/resource',
+        name: '资源管理',
+        routes: [
+          {
+            path: '/platform/resource/object',
+            name: '实例',
+          },
+          {
+            path: '/platform/resource/info',
+            name: '宿主机',
+          },
+          {
+            path: '/platform/resource/database',
+            name: '数据库连接',
+          },
+          {
+            path: '/platform/resource/backup',
+            name: '备份',
+          },
+          {
+            path: '/platform/resource/transfer',
+            name: '迁移',
+          },
+          {
+            path: '/platform/resource/machines',
+            name: '集群',
+          },
+        ],
+      },
+      {
+        path: '/platform/code',
+        name: '代码库管理',
+        routes: [
+          {
+            path: '/platform/code/git',
+            name: 'git管理工具',
+          },
+          {
+            path: '/platform/code/coding',
+            name: 'coding',
+          },
+        ],
+      },
+      {
+        path: '/platform/arch',
+        name: '架构管理',
+        routes: [
+          {
+            path: '/platform/arch/go',
+            name: 'go服务端架构',
+            component: './Arch/go',
+          },
+        ],
+      },
+      {
+        path: '/platform/code/devOps',
+        name: 'devOps',
+        routes: [
+          {
+            path: '/platform/code/devOps/deploy',
+            name: '部署',
+          },
+          {
+            path: '/platform/code/devOps/spring',
+            name: '弹性伸缩容',
+          },
+          {
+            path: '/platform/code/devOps/CICD',
+            name: '自动化任务',
+          },
+          {
+            path: '/platform/code/devOps/rpc',
+            name: 'rpc管理',
+          },
+          {
+            path: '/platform/code/devOps/Protobuf',
+            name: 'protobuf管理',
+          },
+        ],
+      },
+      {
+        path: '/platform/resourcePool',
+        name: '资源池管理',
+        routes: [
+          {
+            path: '/platform/resourcePool/wasm',
+            name: 'wasm镜像',
+          },
+          {
+            path: '/platform/resourcePool/db',
+            name: '数据库表',
+          },
+          {
+            path: '/platform/resourcePool/installPackage',
+            name: '安装包',
+          },
+        ],
+      },
+      {
+        path: '/platform/network',
+        name: '网络管理',
+        routes: [
+          {
+            path: '/platform/network/clashSubscribe',
+            name: 'clash代理订阅管理',
+          },
+          {
+            path: '/platform/network/proxyRules',
+            name: '代理规则管理',
+          },
+        ],
+      },
+    ],
+  },
+  {
     path: '/jobs',
     name: '求职管理',
     routes: [
